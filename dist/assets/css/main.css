@@ -117,7 +117,7 @@ header p {
     margin: 0;
     vertical-align: bottom;
 }
-.header-gallery .btn-premary{
+.header-gallery .btn-premary {
     margin-bottom: 25px;
     background: rgb(25, 181, 254);
     box-shadow: 0 0 0 2px rgba(144, 144, 144, 0.02);
@@ -127,8 +127,16 @@ header p {
     transition: all 0.3s ease-out;
 }
 
+.filter-gallery a{
+    margin: 0;
+}
+
 #gallery h1 {
     margin-bottom: 25px;
+}
+#gallery a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .gallery-img {
@@ -159,7 +167,7 @@ header p {
     filter: brightness(.7);
 }
 
-.gallery-img .btn-premary , form .btn-premary {
+.btn-premary , form .btn-premary {
     margin-top: 58px;
     font-size: 20px;
     background: rgb(25, 181, 254);
