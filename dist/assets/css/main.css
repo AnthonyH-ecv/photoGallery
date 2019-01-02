@@ -104,6 +104,29 @@ header p {
     text-align: center;
 }
 
+.header-gallery {
+    display: flex;
+    text-align: none;
+}
+
+.header-gallery h1{
+    flex:1;
+    text-align: left;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+}
+.header-gallery .btn-premary{
+    margin-bottom: 25px;
+    background: rgb(25, 181, 254);
+    box-shadow: 0 0 0 2px rgba(144, 144, 144, 0.02);
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
 #gallery h1 {
     margin-bottom: 25px;
 }
@@ -123,7 +146,7 @@ header p {
 .media img{
     display: block;
     max-width: 100%;
-    max-height: auto;
+    min-height:200px;
     margin: auto;
     padding: 0;
     object-fit: cover;
@@ -136,7 +159,7 @@ header p {
     filter: brightness(.7);
 }
 
-.btn-premary {
+.gallery-img .btn-premary , form .btn-premary {
     margin-top: 58px;
     font-size: 20px;
     background: rgb(25, 181, 254);
