@@ -109,11 +109,24 @@ header p {
     text-align: none;
 }
 
+#back::before {
+    content:"<"; 
+    color: #22313F; 
+    font-weight: bold;
+    font-size: 40px;
+    display: block;
+    padding-top:6px;
+    margin-right: 30px;
+    
+    
+  }
+  
+
 .header-gallery h1{
     flex:1;
     text-align: left;
     font-weight: 300;
-    padding: 0;
+    padding-top: 10px;
     margin: 0;
     vertical-align: bottom;
 }
