@@ -75,4 +75,8 @@ document.addEventListener("click", function (event) {
 
 });
 
-
+$(document).ready(function(){
+    $(".gallery-img > div").each(function(i) {
+        $(this).delay(100* i).fadeIn(500);
+    });
+});
