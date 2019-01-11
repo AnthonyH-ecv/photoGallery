@@ -99,6 +99,7 @@ header p {
   padding: 30px 0;
   justify-content: center;
 }
+
 .gallery-title {
   flex: 1;
   display: flex;
@@ -110,6 +111,7 @@ header p {
   color: #22313f;
   margin-right: 15px;
 }
+
 .header-gallery h1 {
   text-align: left;
   font-weight: 300;
@@ -137,6 +139,7 @@ header p {
   justify-items: center;
   align-items: center;
 }
+
 .filter-gallery a {
   margin-left: 10px;
   text-decoration: none;
@@ -233,15 +236,26 @@ form .btn-premary {
  * ─────────────────────────────────────────────────────── SECTION FORMULAIRE ─────
  */
 
-form {
-  /* width:80%;
-    margin:auto; */
+#form {
+  flex: 1;
+  background-color: rgb(236, 236, 236);
   padding: 60px;
+}
+
+#form .btn-premary {
+  margin-top: 0;
+
+}
+
+
+.form-header {
+  display: flex;
 }
 
 form label {
   margin-bottom: 15px;
 }
+
 
 form input {
   height: 40px;
@@ -268,19 +282,6 @@ textarea:focus {
   border: 2px solid rgb(25, 181, 254);
 }
 
-#form {
-  flex: 1;
-  background-color: rgb(236, 236, 236);
-}
-
-#form .btn-premary {
-  margin-top: 0;
-}
-
-.form-header {
-  display: flex;
-}
-
 .name {
   flex: 1;
   margin-right: 30px;
@@ -297,6 +298,40 @@ textarea:focus {
   flex-direction: column;
   margin-bottom: 22px;
 }
+
+/*
+ * ───────────────────────────────────────────────── MESSAGE SUCCESS OR ERROR ─────
+ */
+
+.alert {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  width: 400px;
+  border-radius: 4px;
+  display: none;
+}
+
+.alert.success {
+  background-color: rgb(91, 212, 95);
+  text-align: center;
+
+}
+
+.alert strong {
+  font-size: 20px;
+}
+
+.alert.error {
+  background-color: #f52c1ee3;
+  text-align: center;
+}
+
+
 
 /*
  * ─── SECTION FOOTER ─────────────────────────────────────────────────────────────
@@ -445,6 +480,7 @@ footer {
     flex: 0.5;
     text-align: left;
   }
+
   .filter-gallery {
     margin-bottom: 20px;
     justify-content: center;
